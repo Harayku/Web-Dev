@@ -1,3 +1,7 @@
+*{
+    font-family: Roboto;
+}
+
 #header1{
     background-color: #ff5fa2;
     text-align: center;
@@ -29,23 +33,6 @@ html, body{
 }
 
 .headerFont{
-    font-family: "Brush Script MT";
     color: whitesmoke;
     font-size: 175%;
-}
-
-section{
-    padding-top: 1%;
-    display: flex;
-    justify-content: space-around;
-    gap: 10%;
-    flex-wrap: wrap;
-}
-
-figure {
-    text-align: center;
-}
-
-#LatestMusic, #favStan{
-    padding-left: 35%;
 }
