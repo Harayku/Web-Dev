@@ -12,66 +12,67 @@
         <h1 id="hTitle"  class = "headerFont">ONE IN A MILLION</h1>
     </header>
 
-    <header id="header-nav" class = "headerFont">
+    <header id="header-nav" class = "headerFont">       
         <nav>
-            <a >TWICE</a>
+            <a id="TWICEL">TWICE</a>
             <a href="../project_HTML/Home.html">HOME</a>
             <a href="../project_HTML/album.html">ALBUMS</a>
+            <a href="../project_HTML/members.html">MEMBERS</a>
         </nav>
     </header>
 
-    <section>
+    <section class = "picFormat">
         <figure>
             <img src = "../Images/Chaeyoung.jpg" width = "360" height = "640" alt = "Chaeyoung">
-            <figcaption><b>Chaeyoung: Main Rapper</b></figcaption>
+            <figcaption><b>Son Chae-young</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Dahyun.jpg" width = "360" height = "640" alt = "Dahyun">
-            <figcaption><b>Dahyun: Lead Rapper</b></figcaption>
+            <figcaption><b>Kim Da-hyun</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Jeongyeon.jpg" width = "360" height = "640" alt = "Jeongyeon">
-            <figcaption><b>Jeongyeon: Lead Vocalist</b></figcaption>
+            <figcaption><b>Yoo Jeong-yeon</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Jihyo.jpg" width = "360" height = "640" alt = "Jihyo">
-            <figcaption><b>Jihyo: Leader</b></figcaption>
+            <figcaption><b>Park Ji-hyo</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Mina.jpg" width = "360" height = "640" alt = "Mina">
-            <figcaption><b>Mina: Main Dancer</b></figcaption>
+            <figcaption><b>Myoui Mina</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Momo.jpg" width = "360" height = "640" alt = "Momo">
-            <figcaption><b>Momo: Main Dancer</b></figcaption>
+            <figcaption><b>Hirai Momo</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Nayeon.jpg" width = "360" height = "640" alt = "Nayeon">
-            <figcaption><b>Nayeon: Lead Vocalist</b></figcaption>
+            <figcaption><b>Im Na-yeon</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Sana.jpg" width = "360" height = "640" alt = "Sana">
-            <figcaption><b>Sana: Sub-Vocalist</b></figcaption>
+            <figcaption><b>Minatozaki Sana</b></figcaption>
         </figure>
         <figure>
             <img src = "../Images/Tzuyu.jpg" width = "360" height = "640" alt = "Tzuyu">
-            <figcaption><b>Tzuyu: Visual</b></figcaption>
+            <figcaption><b>Chou Tzuyu</b></figcaption>
             <br>
         </figure>
     </section>
 
 
-    <div id = "LatestMusic">
+    <div id = "latestMusic">
        <h3>LATEST SONG:</h3> </a>
         <a href = "https://www.youtube.com/watch?v=Sz_wWzgh-vQ" target="_blank" style="color: black;">   
             <video src = "../Videos/Strategy.mp4" width = "620" height = "360" autoplay controls>
                 TWICE STRATEGY
              </video>
+             <br>
         </a>
     </div>
-
     <div id = "favStan">
-        <label for = "BIAS" style= "font-size: large; font-weight: bolder;">Who is your Favorite Bias?</label>
+        <label id="form1" for = "BIAS">Who is your Favorite Bias?</label>
         <form id = "BIAS">
         <input type = "checkbox" id = "01" name = "STAN" value="01">
         <label for="01"> Chaeyoung </label> <br>
@@ -91,7 +92,7 @@
         <label for="08"> Sana </label> <br>
         <input type = "checkbox" id = "09" name = "STAN" value="09">
         <label for="09"> Tyuzu </label> <br>
-        <input type="submit" onclick="alert('THANK YOU ONCE <3')" value="Submit">
+        <input id="btnSubmit" type="submit" onclick="alert('THANK YOU ONCE <3')" value="Submit">
         </form>
     </div>
 </body>

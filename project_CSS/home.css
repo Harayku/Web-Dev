@@ -5,18 +5,38 @@
 #header1{
     background-color: #ff5fa2;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
     right: 0%;
-    padding: 1%;
+    padding: .5em;   
+}
+
+nav {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#TWICEL {
+    margin-left: 1%;
+    left: 0%;
+}
+
+[href]{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 #header-nav{
     background-color: #fe97a4;
     text-align: center;
-    padding-top : 4em;
-    padding-bottom : .5em;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    margin-top : 3em;
+    padding-bottom : .1em;
 }
 
 h5{
@@ -38,7 +58,14 @@ html, body{
 }
 
 section{
-    padding-top: 1%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.picFormat{
     display: flex;
     justify-content: space-around;
     gap: 10%;
@@ -49,6 +76,32 @@ figure {
     text-align: center;
 }
 
-#LatestMusic, #favStan{
-    padding-left: 35%;
+#latestMusic{
+    justify-items: center;
+    padding-left: 4em;
+}
+
+
+#favStan{
+    font-size: 25px;
+    align-items: left;
+    justify-items: center;
+    padding-left: 4em;
+    padding-bottom: 3em;
+}
+
+#btnSubmit{
+    margin-top: 10%;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fdb3a5;
+    color: whitesmoke;
+}
+
+#btnSubmit:hover{
+    transform: scale(140%);
+    color: #fdb3a5;
+    background-color: white;
+    border: solid #fdb3a5;
 }
