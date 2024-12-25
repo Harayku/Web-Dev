@@ -15,15 +15,15 @@
     <header id="header-nav" class = "headerFont">       
         <nav>
             <a id="TWICEL">TWICE</a>
-            <a href="../project_HTML/Home.html">HOME</a>
-            <a href="../project_HTML/album.html">ALBUMS</a>
-            <a href="../project_HTML/members.html">MEMBERS</a>
+            <a href="../project_HTML/Home.html" class = "nav1">HOME</a>
+            <a href="../project_HTML/album.html" class = "nav1">ALBUMS</a>
+            <a href="../project_HTML/members.html" class = "nav1">MEMBERS</a>
         </nav>
     </header>
 
     <section class = "picFormat">
         <figure>
-            <img src = "../Images/Chaeyoung.jpg" width = "360" height = "640" alt = "Chaeyoung">
+           <a href="../project_HTML/members.html"> <img src = "../Images/Chaeyoung.jpg" width = "360" height = "640" alt = "Chaeyoung"> </a>
             <figcaption><b>Son Chae-young</b></figcaption>
         </figure>
         <figure>
@@ -57,7 +57,6 @@
         <figure>
             <img src = "../Images/Tzuyu.jpg" width = "360" height = "640" alt = "Tzuyu">
             <figcaption><b>Chou Tzuyu</b></figcaption>
-            <br>
         </figure>
     </section>
 
@@ -73,27 +72,51 @@
     </div>
     <div id = "favStan">
         <label id="form1" for = "BIAS">Who is your Favorite Bias?</label>
-        <form id = "BIAS">
-        <input type = "checkbox" id = "01" name = "STAN" value="01">
+        <form action="https://sheetdb.io/api/v1/afh74zufnmeg5" method = "POST" id = "twicedb-form">
+        <input type = "radio" id = "01" name = "CHAEYOUNG" value="01">
         <label for="01"> Chaeyoung </label> <br>
-        <input type = "checkbox" id = "02" name = "STAN" value="02">
+        <input type = "radio" id = "02" name = "DAHYUN" value="01">
         <label for="02"> Dahyun </label> <br>
-        <input type = "checkbox" id = "03" name = "STAN" value="03">
+        <input type = "radio" id = "03" name = "JEONGYEON" value="01">
         <label for="03"> Jeongyeon </label> <br>
-        <input type = "checkbox" id = "04" name = "STAN" value="04">
+        <input type = "radio" id = "04" name = "JIHYO" value="01">
         <label for="04"> Jihyo </label> <br>
-        <input type = "checkbox" id = "05" name = "STAN" value="05">
+        <input type = "radio" id = "05" name = "MINA" value="01">
         <label for="05"> Mina </label> <br>
-        <input type = "checkbox" id = "06" name = "STAN" value="06">
+        <input type = "radio" id = "06" name = "MINA" value="01">
         <label for="06"> Momo </label> <br>
-        <input type = "checkbox" id = "07" name = "STAN" value="07">
+        <input type = "radio" id = "07" name = "NAYEON" value="01">
         <label for="07"> Nayeon </label> <br>
-        <input type = "checkbox" id = "08" name = "STAN" value="08">
+        <input type = "radio" id = "08" name = "SANA" value="01">
         <label for="08"> Sana </label> <br>
-        <input type = "checkbox" id = "09" name = "STAN" value="09">
+        <input type = "radio" id = "09" name = "TZUYU" value="01">
         <label for="09"> Tyuzu </label> <br>
         <input id="btnSubmit" type="submit" onclick="alert('THANK YOU ONCE <3')" value="Submit">
         </form>
     </div>
+
+    <script>
+        var form = document.getElementById('twicedb-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert('Your response has been recorded!');
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error recording your response. Please try again.');
+            });
+        });
+    </script>
+
+    <footer>
+    </footer>
 </body>
 </html>
