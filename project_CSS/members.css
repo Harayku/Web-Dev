@@ -52,10 +52,45 @@ h5{
 }
 
 html, body{
+    background-color: #fcc;
     margin: 0%;
     padding: 0%;
     width: 100%;
     height: 100%;
+}
+
+section{
+    padding-top: 8rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+figure{
+
+}
+
+figcaption{
+    margin-top: 5%;
+    text-align: left;
+}
+
+.img1 {
+    border: solid black;
+    border-radius: 150px;
+    width: 400px;
+    aspect-ratio: 635 / 898; 
+    align-items: flex-start;
+    margin-right: 5%;
+    float: left;
+}
+
+.lovely {
+    border: solid black;
+    border-radius: 1000px;
+    width: 300px;
+    aspect-ratio: 736 / 736; 
 }
 
 .headerFont{

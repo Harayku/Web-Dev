@@ -52,6 +52,7 @@ h5{
 }
 
 html, body{
+    background-color: #fcc;
     margin: 0%;
     padding: 0%;
     width: 100%;
@@ -79,7 +80,13 @@ section{
 }
 
 figure {
+    border: solid black;
+    border-radius: 50px;
     text-align: center;
+}
+
+img{
+    border-radius: 46px;
 }
 
 figure:hover {
@@ -87,6 +94,9 @@ figure:hover {
     border: ridge #ff5fa2;
 }
 
+video{
+    border-radius: 80px;
+}
 
 #latestMusic{
     justify-items: center;
